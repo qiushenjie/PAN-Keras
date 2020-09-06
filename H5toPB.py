@@ -33,7 +33,7 @@ def h5_to_pb(h5_model, output_dir, model_name, out_prefix="output_", log_tensorb
         import_pb_to_tensorboard.import_to_tensorboard(os.path.join(output_dir, model_name), output_dir)
 
 if __name__ == '__main__':
-    from PAN.PANNet import PANNET
+    from PANNet import PANNET
     model = PANNET((256, 256, 3))
     model.load_weights('./models/weights_-09-0.13.h5')
     h5_to_pb(model, './models/', 'PAN.pb')
