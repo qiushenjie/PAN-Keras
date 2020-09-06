@@ -1,5 +1,4 @@
 
-# max_depth = 256
 point_num = 4  # b标注框顶点数
 
 rate_ohem = 3       #positive ：negtive = 1:rate_ohem
@@ -8,7 +7,6 @@ alpha = 0.5
 beta = 0.25
 delta_agg = 0.5
 delta_dis = 3
-ohem_ratio = 3
 
 batch_size = 2
 reduction = 'mean'
@@ -17,9 +15,6 @@ max_text_nums = 11 # 数据集中单张图片最多的文本实例数量
 data_gen_min_scales = 0.8
 data_gen_max_scales = 2.0
 data_gen_itter_scales = 0.3
-
-#随机剪切 文字区域最小面积
-data_gen_clip_min_area = 20*100
 
 
 #dice loss
